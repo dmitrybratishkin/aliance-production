@@ -75,6 +75,11 @@ body {
     margin-right: 50px;
     color: inherit;
 }
+.header-nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .header-phone {
     flex-shrink: 0;
     display: flex;
@@ -101,7 +106,6 @@ body {
 .navbar-button {
     flex-shrink: 0;
     height: 100%;
-
 }
 .header-button {
     height: 100%;
