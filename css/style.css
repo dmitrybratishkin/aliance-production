@@ -16,6 +16,7 @@ body {
 }
 .navbar {
     display: flex;
+    flex-basis: 100%;
     align-items: center;
     color: white;
     height: 94px;
@@ -34,6 +35,11 @@ body {
 .navbar-light .header-logo-path {
     fill: #292D33;
 }
+.navbar-button {
+    flex-shrink: 0;
+    height: 100%;
+    padding: 25px 50px;
+}
 .header {
     padding-top: 94px;
     min-height: 100vh;
@@ -42,13 +48,13 @@ body {
     background-image: url("../img/header-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom -20px;
     position: relative;
 }
 .header-image::before {
     content: "";
     position: absolute;
-    background: rgba(41, 45, 51, 0.6);
+    background: rgba(41, 45, 51, 0.75);
     top: 0;
     left: 0;
     width: 100%;
@@ -109,6 +115,7 @@ body {
 }
 .header-button {
     height: 100%;
+    padding: 26px 60px;
 }
 .seporator {
     background: #5C8EE5;
@@ -127,6 +134,8 @@ body {
     font-size: 80px;
     line-height: 120%;
     margin: 30px 0;
+    letter-spacing: 0.8px;
+    word-spacing: -1.6px;
 }
 .header-text {
     max-width: 720px;
@@ -146,7 +155,8 @@ body {
     position: relative;
 }
 .header-features-item {
-    padding: 30px 50px;
+    padding: 28px 50px;
+    width: 288px;
     border: 1px solid rgba(235, 235, 240, 0.2)
 }
 .header-features-item:not(:last-child) {
@@ -156,25 +166,28 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 160%;
+    margin-bottom: 0;
+    margin-top: 18px;
 }
 .section {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin: 150px auto;
 }
 .section-title {
     font-family: 'Bebas Neue Book';
     font-size: 60px;
     line-height: 120%;
     color: #292D33;
+    margin: 22px 0 50px;
 }
 .steps {
     display: flex;
     list-style: none;
     padding: 0;
-    gap: 30px;
+    margin: 0;
 }
 .steps-item {
     max-width: 330px;
+    margin-left: 30px;
 }
 .steps-num {
     color: #5C8EE5;
@@ -183,6 +196,8 @@ body {
     line-height: 120%;
     display: flex;
     align-items: center;
+    gap: 30px;
+    margin-right: 30px;
 }
 .steps-num::after {
     content: "";
