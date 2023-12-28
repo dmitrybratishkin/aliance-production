@@ -246,3 +246,23 @@ body {
     width: 2.5rem;
     margin-right: 1.25rem;
 }
+@media (min-width: 75rem) and (max-width: 120rem) {
+    .navbar {
+        height: 5.875rem;
+    }
+    .navbar-light {
+        height: 4.5rem;
+    }
+    .header-nav-link {
+        font-size: .625rem;
+    }
+    .header-title {
+        font-size: 3.75rem;
+    }
+    .button {
+        padding: .625rem 1.875rem;
+    }
+    .header-features-item {
+        width: 14.75rem;
+    }
+}
