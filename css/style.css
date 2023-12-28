@@ -246,25 +246,3 @@ body {
     width: 2.5rem;
     margin-right: 1.25rem;
 }
-@media (min-width: 1200px) and (max-width: 1920px) {
-    .navbar {
-        height: 5.875rem;
-    }
-    .header-nav-link {
-        font-size: 10px;
-    }
-    .header-title {
-        color: red;
-    }
-    .button {
-        font-size: 1rem;
-        font-weight: 600;
-        line-height: 160%;
-        color: white;
-        background: #3A71D1;
-        padding: 10px 30px;
-        border: none;
-        display: inline-block;
-        cursor: pointer;
-    }
-}
