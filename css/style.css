@@ -185,7 +185,7 @@ body {
 }
 .steps-buttons {
     display: none;
-    width: 60px;
+    height: 40px;
     justify-content: flex-end;
 }
 .slider-button-next, .slider-button-prev {
@@ -321,7 +321,6 @@ body {
     }
     .steps-buttons {
         display: flex;
-        height: 40px;
     }
     .steps-button-next, .steps-button-prev {
         width: 60px;
