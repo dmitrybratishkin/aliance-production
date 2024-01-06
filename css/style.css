@@ -54,7 +54,6 @@ body {
 }
 .header {
     padding-top: 5.875rem;
-    min-height: 100vh;
 }
 .header-image {
     background-image: url("../img/header-bg.jpg");
@@ -173,11 +172,37 @@ body {
 }
 .header-features-item {
     padding: 1.75rem 3.125rem;
+    min-height: 100%;
     width: 18rem;
     border: .0625rem solid rgba(235, 235, 240, 0.2)
 }
-.header-features-item:not(:last-child) {
-    border-right: none;
+.slider-buttons {
+    display: none;
+    height: 44px;
+}
+.steps-buttons {
+    display: none;
+    height: 60px;
+    justify-content: flex-end;
+}
+.slider-button-next, .slider-button-prev {
+    height: 100%;
+    flex-basis: 50%;
+    border: 1px solid rgba(235, 235, 240, 0.20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.steps-button-next, .steps-button-prev {
+    width: 80px;
+    height: 100%;
+    border: 1px solid rgba(235, 235, 240, 0.20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #5C8EE5;
 }
 .header-features-text {
     font-size: 1rem;
@@ -203,8 +228,7 @@ body {
     gap: 1.875rem;
 }
 .steps-item {
-    max-width: 20.625rem;
-    margin-left: 1.875rem;
+    padding-right: 1.875rem;
 }
 .steps-num {
     color: #5C8EE5;
@@ -288,6 +312,16 @@ body {
     }
     .container {
         max-width: 70rem;
+    }
+    .slider-buttons {
+        display: flex;
+    }
+    .steps-buttons {
+        display: flex;
+        height: 40px;
+    }
+    .steps-button-next, .steps-button-prev {
+        width: 60px;
     }
 }
 @media (max-width: 992px) {
@@ -420,5 +454,27 @@ body {
     }
     .close-menu .mobile-menu-line:nth-child(3) {
         transform: rotate(-45deg) translateY(-11px);
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 40rem;
+    }
+    .header-title {
+        font-size: 4rem;
+    }
+    .header-content {
+        padding-top: 3rem;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 90%;
+    }
+    .header-title {
+        font-size: 2rem;
+    }
+    .header-content {
+        padding-top: 2rem;
     }
 }
