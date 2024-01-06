@@ -38,7 +38,7 @@ mMenuToggle.addEventListener("click", (event) => {
     menu.classList.contains('is-open') ? closeMenu() : openMenu();
 });
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-slider', {
     speed: 400,
     autoHeight: true,
     slidesPerView: 1,
