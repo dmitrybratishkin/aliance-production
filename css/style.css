@@ -185,7 +185,7 @@ body {
 }
 .steps-buttons {
     display: none;
-    height: 60px;
+    width: 60px;
     justify-content: flex-end;
 }
 .slider-button-next, .slider-button-prev {
