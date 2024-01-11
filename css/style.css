@@ -84,6 +84,8 @@ body {
 }
 .header-nav {
     display: flex;
+    align-items: center;
+    height: 100%;
     flex-basis: 100%;
     list-style: none;
     padding: 0 3.125rem;
@@ -93,6 +95,26 @@ body {
     text-decoration: none;
     font-size: 1rem;
     color: inherit;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+.header-nav-link:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    bottom: -1px;
+    background-color: #5c8ee6;
+    transition: width 0.2s;
+    right: 0;
+    left: auto;
+}
+.header-nav-link:hover::after {
+    width: 100%;
+    right: auto;
+    left: 0;
 }
 .header-nav-item {
     height: 100%;
@@ -281,6 +303,101 @@ body {
     background: #5C8EE6;
     width: 2.5rem;
     margin-right: 1.25rem;
+    transition: width 0.2s;
+}
+.steps-link:hover:before {
+    width: 60px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    text-decoration: none;
+    flex-basis: 33%;
+    border: 1px solid #ebebf0;
+    position: relative;
+    transition: border 0.2s;
+}
+.card:hover .card-title {
+    color: #5c8ee6;
+}
+.card:hover {
+    border-color: #5c8ee6;
+}
+.card-content {
+    padding: 40px 50px;
+}
+.card-title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #292D33;
+    margin-top: 0;
+    margin-bottom: 10px;
+    transition: color 0.2s;
+}
+.card-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    color: #828A99;
+    margin-bottom: 394px;
+}
+.card-image {
+    position: absolute;
+    max-width: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 90%;
+}
+.trademark-cards {
+    display: flex;
+}
+.trademark-card {
+    flex-basis: 50%;
+    text-decoration: none;
+    border: 1px solid #ebebf0;
+    transition: border 0.2s;
+    padding: 3.125rem;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: auto 2fr;
+    grid-template-areas:
+        'logo title title'
+        'logo text text';
+}
+.trademark-logo {
+    grid-area: logo;
+    fill: #828a99;
+    width: 100%;
+}
+.trademark-card:hover .trademark-logo {
+    fill: #5c8ee6;
+}
+.trademark-title {
+    grid-area: title;
+    color: #292D33;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0 0 .715rem;
+}
+.trademark-card:hover .trademark-title {
+    color: #5c8ee6;
+}
+.trademark-text {
+    grid-area: text;
+    margin: 0;
+    color: #828A99;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 160%
+}
+.trademark-card:hover {
+    border-color: #5c8ee6;
 }
 @media (max-width: 91.25rem) {
     html {
@@ -324,6 +441,12 @@ body {
     }
     .steps-button-next, .steps-button-prev {
         width: 60px;
+    }
+    .card {
+        flex-basis: 50%;
+    }
+    .trademark-cards {
+        flex-direction: column;
     }
 }
 @media (max-width: 992px) {
@@ -467,6 +590,13 @@ body {
     }
     .header-content {
         padding-top: 3rem;
+    }
+    .card {
+        flex-basis: 100%;
+    }
+    .trademark-card {
+        grid-template-columns: 100px auto;
+        padding: 2.5rem;
     }
 }
 @media (max-width: 576px) {
