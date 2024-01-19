@@ -444,9 +444,13 @@ body {
     }
     .card {
         flex-basis: 50%;
+        width: 345px;
     }
     .trademark-cards {
         flex-direction: column;
+    }
+    .trademark-card {
+        grid-template-columns: auto auto;
     }
 }
 @media (max-width: 992px) {
