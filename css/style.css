@@ -424,7 +424,7 @@ body {
         display: none;
     }
     .navbar {
-        height: 5rem;
+        height: 5.8rem;
     }
     .navbar-button {
         padding-left: 2rem;
@@ -463,13 +463,20 @@ body {
         flex-grow: 1;
         justify-content: center;
     }
+    .logo-svg {
+        max-width: 10rem;
+    }
+    .navbar-button {
+        padding-left: 2.3rem;
+        padding-right: 2.3rem;
+    }
     .mobile-menu-toggle {
         width: 80px;
         height: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        padding: 1.8rem;
+        padding: 2.3rem 2.5rem;
         border-right: 1px solid rgba(235, 235, 240, 0.2);
     }
     .navbar-light .mobile-menu-line {
@@ -589,24 +596,54 @@ body {
         font-size: 4rem;
     }
     .header-content {
-        padding-top: 3rem;
+        padding-top: 4rem;
     }
     .card {
         flex-basis: 100%;
+        width: 345px;
+        height: 429px;
+    }
+    .card-content {
+        padding: 20px;
     }
     .trademark-card {
         grid-template-columns: 100px auto;
         padding: 2.5rem;
+    }
+    .header-button {
+        width: 345px;
+    }
+    .section-title {
+        font-size: 34px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .card-text {
+        width: 285px;
+        height: 66px;
+        font-size: 14px;
+    }
+    .trademark-logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 36px;
+    }
+    .trademark-title {
+        font-size: 20px;
     }
 }
 @media (max-width: 576px) {
     .container {
         max-width: 90%;
     }
-    .header-title {
-        font-size: 2rem;
+    .steps-text {
+        width: 300px;
+        height: 66px;
     }
-    .header-content {
-        padding-top: 2rem;
+    .trademark-card { 
+    grid-template-areas:
+    'logo title'
+    'text text';
     }
 }
