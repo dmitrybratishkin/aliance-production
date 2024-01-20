@@ -631,6 +631,112 @@ body {
     line-height: 160%;
     color: #828A99;
 }
+.footer-top {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-logo {
+    width: 12.5rem;
+    height: 3.75rem;
+}
+.footer-info {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-style: normal;
+    color: #292D33;
+    gap: 10px;
+}
+.footer-info-address, .footer-info-email {
+    font-style: inherit;
+    text-decoration: inherit;
+    color: inherit;
+}
+.footer-phone {
+    color: #292D33;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    text-decoration-line: underline;
+}
+.footer-social-link {
+    text-decoration: none;
+}
+.footer-seporator {
+    color: #ebebf0;
+    background-color: #ebebf0;
+}
+.footer-bottom {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-menu-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+.footer-menu-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: none;
+}
+.footer-menu-column-2 {
+    columns: 20rem auto;
+    min-width: 50rem;
+}
+.footer-menu-link {
+    text-decoration: none;
+    color: #828A99;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 15px;
+    display: block;
+}
+.footer-menu-link-bold {
+    color: #292D33;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    margin-bottom: 30px;
+}
+.footer-bottom {
+    display: flex;
+}
+.footer-menu-wrapper:last-child {
+    margin-left: 5rem;
+}
+.footer-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #828A99;
+    font-style: normal;
+}
+.footer-wrapper, .footer-legal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+.footer-copyright, .footer-policy {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: inherit;
+}
+.made-in:before {
+    content: 'Cделано в'
+}
 @media (max-width: 91.25rem) {
     html {
        font-size: 13px;
@@ -701,6 +807,13 @@ body {
     }
     .cta-image {
         display: none;
+    }
+    .footer-phone {
+        font-size: 20px;
+    }
+    .footer-logo {
+        width: 160px;
+        height: 40px;
     }
 }
 @media (max-width: 992px) {
@@ -844,6 +957,36 @@ body {
     .clients-wrapper {
         flex-direction: column;
     }
+    .footer-top {
+        flex-wrap: wrap;
+    }
+
+    .footer-logo-wrapper,
+    .footer-phone {
+        flex-basis: 50%;
+    }
+
+    .footer-info:nth-child(odd) {
+        flex-basis: 50%;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+        row-gap: 30px;
+        padding: 1.25rem 0 0;
+    }
+
+    .footer-menu-wrapper {
+        flex-basis: 50%;
+    }
+
+    .footer-menu-wrapper:first-child {
+        flex-basis: 100%;
+    }
+
+    .footer-copyright {
+        flex-basis: 50%;
+    }
 }
 @media (max-width: 768px) {
     .container {
@@ -893,6 +1036,50 @@ body {
         position: relative;
         width: 100%;
         margin-bottom: 3.125rem;
+    }
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-menu-column-2 {
+        columns: initial;
+    }
+
+    .footer-menu-wrapper:last-child {
+        margin-left: -1.25rem;
+    }
+
+    .footer-top,
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .footer-logo-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .footer-phone {
+        margin-bottom: 20px;
+    }
+
+    .footer-info {
+        margin-bottom: 12px;
+    }
+
+    .footer-social {
+        margin-top: 20px;
+    }
+
+    .footer-author,
+    .footer-social {
+        margin: 0;
+    }
+    .footer-legal:first-child {
+        flex-basis: 100%;
+    }
+    .made-in:before {
+        content: 'Дизайн и разработка: '
     }
 }
 @media (max-width: 576px) {
