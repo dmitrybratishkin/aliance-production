@@ -35,6 +35,17 @@ body {
 .navbar-light {
     background-color: #fff;
     color: #292D33;
+}
+.logo-dark {
+    display: none;
+}
+.navbar-light .logo-light {
+    display: none;
+}
+.navbar-light .logo-dark {
+    display: block;
+}
+.navbar-scroll {
     height: 4.5rem;
 }
 .phone-svg {
@@ -42,9 +53,6 @@ body {
 }
 .navbar-light .header-logo-path {
     fill: #292D33;
-}
-.logo {
-    display: none;
 }
 .logo-svg {
     width: 9rem;
@@ -244,11 +252,25 @@ body {
     margin: 9.375rem auto;
 }
 .section-title {
-    font-family: 'Bebas Neue Book';
     font-size: 3.75rem;
     line-height: 120%;
+    font-weight: 400;
+    font-family: "Bebas Neue Book";
+    margin: 0 0 3.125rem;
     color: #292D33;
-    margin: 1.375rem 0 3.125rem;
+    position: relative;
+    padding-top: 1.875rem;
+}
+
+.section-title::before {
+    height: 2px;
+    width: 9.375rem;
+    background: #5C8EE5;
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+
 }
 .steps {
     display: flex;
@@ -452,6 +474,27 @@ body {
     color: #292d33;
     margin-bottom: 1.2rem;
 }
+
+.clients-list,
+.section-list {
+    list-style-type: none;
+    padding: 0;
+    columns: 2 10rem;
+    margin-top: 2.4rem;
+}
+
+.clients-list-item,
+.section-list-item {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #292d33;
+    margin-bottom: 1.2rem;
+}
+
 .clients-logo-list {
     display: flex;
     flex-wrap: wrap;
@@ -814,6 +857,214 @@ body {
     width: 100%;
     display: block;
 }
+.header-company {
+    background-color: #F0F2F5;
+}
+.company-content {
+    margin-top: 50px;
+    width: 100%;
+    height: 270px;
+}
+.company-title {
+    max-width: 1200px;
+    font-family: 'Bebas Neue Book';
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: #292D33;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.breadcrumb {
+    margin-bottom: 50px;
+}
+ul.breadcrumb {
+    padding: 10px 0;
+    list-style: none;
+    color: #292D33;
+    text-decoration: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #828A99;
+    content: "—\00a0";
+}
+ul.breadcrumb li a {
+    color: #828A99;
+    text-decoration: none;
+}
+.about-features-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 0;
+    margin-top: 1.125rem;
+    color: #292D33;
+}
+.about-features {
+    display: flex;
+    min-height: 10.5rem;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    position: relative;
+    margin-top: 0;
+}
+.we-experts {
+    flex-direction: row-reverse;
+}
+
+.we-experts .section-title {
+    max-width: 37.5rem;
+}
+
+.we-experts-content {
+    flex-basis: 52.5rem;
+}
+
+.we-experts-image {
+    width: 30rem;
+}
+.section-about-swiper {
+    width: 1440px;
+    height: 168px;
+    color: #292D33;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    margin-top: 0;
+}
+.about-slider {
+    min-height: 168px;
+}
+.about-center {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.about-center-text {
+    width: 635px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #828A99;
+    margin-bottom: 50px;
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-center-text:first-child {
+    margin-right: 100px;
+}
+.center-slider-footer {
+    display: flex;
+    align-items: end;
+    margin-top: 30px;
+    justify-content: end;
+}
+.about-image {
+    position: relative;
+    color: #292D33;
+}
+.about-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    color: #292D33;
+    display: flex;
+    align-items: center;
+}
+.about-founder {
+    margin-top: 150px;
+}
+.about-card {
+    display: flex;
+    position: relative;
+    min-width: 700px;
+    min-height: 25rem;
+    flex-direction: column;
+    text-decoration: none;
+    color: #fff;
+    justify-content: flex-end;
+    padding: 3.125rem;
+}
+.about-card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.about-card-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.our-production-wrapper {
+    display: grid;
+    grid-template-columns: 50% 7.5rem 1fr;
+    grid-template-rows: 3.125rem auto 1fr;
+    grid-template-areas:
+        '. . image'
+        'title . image'
+        'content . image';
+}
+
+.our-production-title {
+    grid-area: title;
+}
+
+.our-production-content {
+    grid-area: content;
+}
+
+.our-production-image {
+    grid-area: image;
+    align-self: center;
+}
+
+.flexgrid .section-title {
+    margin-bottom: 1.25rem;
+}
+.our-production-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #828A99;
+    margin-bottom: 30px;
+}
+.section-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #828A99;
+}
+
+
 @media (max-width: 91.25rem) {
     html {
        font-size: 13px;
@@ -835,6 +1086,20 @@ body {
     }
     .cta-image {
         width: 40%;
+    }
+    .clients-list-item {
+        font-size: 13px;
+        gap: 1rem;
+    }
+    .about-center-text {
+        font-size: 14px;
+        max-width: 90%;
+    }
+    .cta-form {
+        max-width: 80%
+    }
+    .about-founder {
+        margin-top: 100px;
     }
 }
 @media (max-width: 1200px) {
@@ -883,7 +1148,7 @@ body {
         flex-basis: 60%;
     }
     .cta-image {
-        display: none;
+        width: 30%;
     }
     .footer-phone {
         font-size: 20px;
@@ -891,6 +1156,25 @@ body {
     .footer-logo {
         width: 160px;
         height: 40px;
+    }
+    .company-title {
+        font-size: 70px;
+    }
+    .company-content {
+        height: 200px;
+    }
+    .company-title {
+        font-size: 60px;
+    }
+    .we-experts-content {
+        max-width: 57.5rem;
+    }
+    .our-production-wrapper {
+        grid-template-columns: 50% 7.5rem 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            'title . image'
+            'content . image';
     }
 }
 @media (max-width: 992px) {
@@ -1064,6 +1348,27 @@ body {
     .footer-copyright {
         flex-basis: 50%;
     }
+    .we-experts-content {
+        max-width: 59.5rem;
+    }
+    .we-experts {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .we-experts-content {
+        flex-basis: auto;
+    }
+    .our-production-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'title'
+            'image'
+            'content';
+    }
+    .our-production-image {
+        justify-self: center;
+    }
 }
 @media (max-width: 768px) {
     .container {
@@ -1158,6 +1463,13 @@ body {
     .made-in:before {
         content: 'Дизайн и разработка: '
     }
+    .section-about-swiper {
+        margin-top: 100px;
+    }
+    .our-production-text {
+        font-size: 14px;
+        max-width: 80%;
+    }
 }
 @media (max-width: 576px) {
     .container {
@@ -1226,5 +1538,11 @@ body {
     }
     .modal-form-footer {
         margin-top: 20px;
+    }
+    .we-expert-section {
+        margin-bottom: 10px;
+    }
+    .section-about-swiper {
+        margin-top: 50px;
     }
 }
