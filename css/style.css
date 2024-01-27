@@ -20,17 +20,15 @@ body {
 .navbar {
     display: flex;
     flex-basis: 100%;
-    align-items: center;
-    color: white;
+    color: #fff;
     height: 5.875rem;
     position: fixed;
+    z-index: 2;
     left: 0;
     top: 0;
-    right: 0;
-    z-index: 2;
-    border-bottom: .0625rem solid rgba(235, 235, 240, 0.2);
-    transition: background-color 0.2s, height 0.2s;
     width: 100%;
+    border-bottom: 1px solid rgba(235, 235, 240, 0.20);
+    transition: background-color 0.2s, height 0.2s;
 }
 .navbar-light {
     background-color: #fff;
@@ -1078,6 +1076,98 @@ ul.breadcrumb li a {
     color: #828A99;
 }
 
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 45, 51, 0.5);
+    z-index: 10;
+    display: flex;
+}
+
+.modal.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.is-open .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal-dialog {
+    background-color: #fff;
+    margin: auto;
+    max-width: 460px;
+    padding: 40px 50px;
+    position: relative;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.modal-close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ebebf0;
+}
+
+.modal-title {
+    font-family: 'Bebas Neue Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 120%;
+    color: #292d33;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.modal-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828a99;
+    margin-bottom: 30px;
+}
+
+.modal-input-group {
+    background-color: #fff;
+}
+
+.modal-form-footer {
+    margin-top: 30px;
+}
+
+.modal-form-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.modal-photo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.modal-button-back {
+    width: 100%;
+    height: 100%;
+}
+
 
 @media (max-width: 91.25rem) {
     html {
@@ -1090,6 +1180,7 @@ ul.breadcrumb li a {
         min-width: 6rem;
     }
     .header-nav {
+        gap: 2rem;
         padding-left: 2rem;
     }
     .header-nav-item:not(:last-child) {
@@ -1098,9 +1189,6 @@ ul.breadcrumb li a {
     .header-phone {
         margin-right: 2rem;
     }
-    .cta-image {
-        width: 40%;
-    }
     .clients-list-item {
         font-size: 13px;
         gap: 1rem;
@@ -1108,9 +1196,6 @@ ul.breadcrumb li a {
     .about-center-text {
         font-size: 14px;
         max-width: 90%;
-    }
-    .cta-form {
-        max-width: 80%
     }
     .about-founder {
         margin-top: 100px;
@@ -1162,7 +1247,10 @@ ul.breadcrumb li a {
         flex-basis: 60%;
     }
     .cta-image {
-        width: 30%;
+        display: none;
+    }
+    .cta-form {
+        width: 100%;
     }
     .footer-phone {
         font-size: 20px;
@@ -1489,6 +1577,9 @@ ul.breadcrumb li a {
     .container {
         max-width: 90%;
     }
+    .navbar {
+        max-width: 375px;
+    }
     .steps-text {
         width: 300px;
         height: 66px;
@@ -1504,6 +1595,9 @@ ul.breadcrumb li a {
     .clients-logo-item {
         flex-basis: 50%;
     }
+    .blog {
+        margin-bottom: 100px;
+    }
     .blog-card-title {
         font-size: 20px;
         line-height: 1.2;
@@ -1512,21 +1606,23 @@ ul.breadcrumb li a {
     .blog-card-text {
         display: none;
     }
-    .cta-form-button {
-        width: 100%;
-    }
     .input-group-wrapper {
         flex-direction: column;
     }
-
+    .cta {
+        margin-top: 100px;
+    }
     .cta-form-footer {
         flex-direction: column;
+        align-items: initial;
     }
-
     .cta-form-text {
         font-size: 14px;
     }
-
+    .section-cta {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
     .notify-text {
         min-width: 100%;
     }
@@ -1552,6 +1648,9 @@ ul.breadcrumb li a {
     }
     .modal-form-footer {
         margin-top: 20px;
+    }
+    .modal-thanks {
+        padding: 0 30px 30px 30px;
     }
     .we-expert-section {
         margin-bottom: 10px;

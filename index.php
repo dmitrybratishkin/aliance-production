@@ -108,11 +108,11 @@
             <a href="tel: +74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
         </header>
         <!-- /.phone -->
-        <button class="navbar-button button" data-toggle="modal">
+        <button class="navbar-button button" data-toggle="modal" data-target="#feedback-modal">
             <svg class="button-icon" width="24" height="24">
                 <use href="img/sprite.svg#phone"></use>
             </svg>
-            <span class="button-text" data-toggle="modal">Получить консультацию</span>
+            <span class="button-text">Получить консультацию</span>
         </button>
     </nav>
     <!-- /.navbar -->

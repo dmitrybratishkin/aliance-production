@@ -2,7 +2,7 @@
         <div class="bg-grey section-cta">
             <img src="img/cta.png" alt="call to action" class="cta-image">
             <div class="cta-from-wrapper container">
-                <form action="handler.php" method="POST" class="cta-form">
+                <form action="./handler.php" method="POST" class="cta-form">
                     <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
                     <p class="cta-form-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
                     <div class="input-group-wrapper">
@@ -12,8 +12,8 @@
                         </div>
                         <!-- /.input-group -->
                         <div class="input-group">
-                            <input id="user-phone" type="tel" class="input" name="userphone" placeholder=" " maxlenght="30" required>
-                            <label class="input-group-label" for="user-phone">Номер телефона</label>
+                            <input id="user-phone" type="tel" class="input phone-mask" name="userphone" placeholder=" " maxlenght="30" required>
+                            <label class="input-group-label phone-mask" for="user-phone">Номер телефона</label>
                         </div>
                         <!-- /.input-group -->
                     </div>
@@ -31,7 +31,7 @@
                 </form>
             </div>
         </div>
-    </section>
+</section>
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
@@ -125,25 +125,25 @@
             </div>
         </div>
     </footer>
-    <div class="modal">
+    <div class="modal" id="feedback-modal">
         <div class="modal-dialog">
             <h2 class="modal-title">Есть вопросы?</h2>
-            <a href="#" class="modal-close" data-toggle="modal">
+            <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
                 <svg class="close-icon" width="24" height="24">
                     <use href="img/sprite.svg#close"></use>
                 </svg>
             </a>
             <p class="modal-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-            <form action="handler.php" method="POST" class="modal-form"></form>
+            <form action="handler.php" method="POST" class="modal-form">
             <div class="input-group-wrapper input-group-vertical">
                 <div class="input-group modal-input-group">
-                    <input id="modal-user-name" type="text" class="input modal-input" placeholder=" ">
-                    <label class="input-group-label modal-input-label" name="username" for="user-name">Имя</label>
+                    <input id="modal-user-name" type="text" class="input modal-input " name="username" placeholder=" " maxlenght="50" required>
+                    <label class="input-group-label modal-input-label" name="username" for="modal-user-name">Имя</label>
                 </div>
                 <!-- /.input-group -->
                 <div class="input-group modal-input-group">
-                    <input id="modal-user-phone" type="tel" class="input modal-input" placeholder=" ">
-                    <label class="input-group-label modal-input-label" name="userphone" for="user-phone">Номер телефона</label>
+                    <input id="modal-user-phone" type="tel" class="input modal-input phone-mask" name="userphone" placeholder=" "maxlenght="30" required>
+                    <label class="input-group-label modal-input-label" name="userphone" for="modal-user-phone">Номер телефона</label>
                 </div>
                 <!-- /.input-group -->
             </div>
@@ -157,8 +157,34 @@
                     <p class="notify-text">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!</p>
                 </div>
             </div>
+            </form>
         </div>
     </div>
+
+    <div class="modal" id="alert-modal">
+        <div class="modal-dialog modal-thanks">
+            <div class="modal-photo">
+                <svg width="360" height="310">
+                    <use href="img/sprite.svg#thanks"></use>
+                </svg>
+            </div>
+            <h2 class="modal-title">Спасибо за заявку!</h2>
+            <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
+                <svg class="close-icon" width="24" height="24">
+                    <use href="img/sprite.svg#close"></use>
+                </svg>
+            </a>
+            <p class="modal-text">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+            <div class="modal-button">
+                <a href="index.php" class="modal-back">
+                    <button class="button modal-button-back">
+                    <span class="button-text">Вернуться на главную</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js"></script>
