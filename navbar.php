@@ -19,12 +19,12 @@
             <li class="header-nav-item"><a href="" class="header-nav-link">Новости</a></li>
             <li class="header-nav-item"><a href="" class="header-nav-link">Контакты</a></li>
         </ul>
-        <header class="header-phone">
+        <div class="header-phone">
             <svg class="phone-svg" width="24" height="24">
                 <use href="img/sprite.svg#phone"></use>
             </svg>
             <a href="tel: +74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
-        </header>
+        </div>
         <!-- /.phone -->
         <button class="navbar-button button" data-toggle="modal" data-target="#feedback-modal">
             <svg class="button-icon" width="24" height="24">

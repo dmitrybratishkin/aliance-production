@@ -93,16 +93,16 @@ body {
     align-items: center;
     padding: 0rem 3.125rem;
     border-right: .0625rem solid rgba(235, 235, 240, 0.2);
-    height: 100%;
+    flex-shrink: 0;
 }
 .header-nav {
     display: flex;
     align-items: center;
-    height: 100%;
     flex-basis: 100%;
     list-style: none;
     padding: 0 3.125rem;
     margin: 0;
+    gap: 3.125rem;
 }
 .header-nav-link {
     text-decoration: none;
@@ -1204,8 +1204,11 @@ ul.breadcrumb li a {
     html {
        font-size: 13px;
     }
+    .navbar {
+        height: 5.8rem;
+    }
     .header-logo {
-        padding: 2rem;
+        padding: 0 2rem;
     }
     .logo-svg {
         min-width: 6rem;
@@ -1214,11 +1217,11 @@ ul.breadcrumb li a {
         gap: 2rem;
         padding-left: 2rem;
     }
-    .header-nav-item:not(:last-child) {
-        margin-right: 1rem;
-    }
     .header-phone {
         margin-right: 2rem;
+    }
+    .navbar-button {
+        padding: 1.5625rem 2rem;
     }
     .clients-list-item {
         font-size: 13px;
@@ -1603,13 +1606,14 @@ ul.breadcrumb li a {
         font-size: 14px;
         max-width: 80%;
     }
+    .navbar-button .button-icon {
+        display: block;
+        fill: #fff;
+    }
 }
 @media (max-width: 576px) {
     .container {
         max-width: 90%;
-    }
-    .navbar {
-        max-width: 375px;
     }
     .steps-text {
         width: 300px;
