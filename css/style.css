@@ -1168,6 +1168,30 @@ ul.breadcrumb li a {
     height: 100%;
 }
 
+.seo-title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #292D33;
+}
+.seo-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #828A99;
+    margin: 10px 0 20px;
+}
+
+.more-link {
+    color: #5C8EE5;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 
 @media (max-width: 91.25rem) {
     html {
