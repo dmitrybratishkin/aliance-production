@@ -17,7 +17,11 @@
                         <p>Разнообразный и богатый опыт говорит нам, что перспективное планирование однозначно фиксирует необходимость поставленных обществом задач! Есть над чем задуматься: ключевые особенности структуры проекта могут быть объединены в целые кластеры себе подобных. Интерактивные прототипы, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут описаны максимально подробно. Значимость этих проблем настолько очевидна, что перспективное планирование играет важную роль в формировании системы массового участия.</p>
                     </div>
                 </div>
-                <img class="we-experts-image" src="./img/about/our.png" alt="Наше производство">
+                <picture class="we-experts-image">
+                        <source type="image/webp" srcset="img/about/our.webp">
+                        <source type="image/jpeg" srcset="img/about/our.png">
+                        <img src="img/about/our.png" alt="Наше производство">
+                    </picture>
             </div>
 
         </div>
@@ -78,7 +82,11 @@
                     </ul>
                 </div>
                 <div class="our-production-image">
-                    <img class="" src="./img/about/girl.jpg" alt="Наше производство" class="our-production-photo">
+                <picture class="our-production-photo">
+                        <source type="image/webp" srcset="img/about/girl.webp">
+                        <source type="image/jpeg" srcset="img/about/girl.jpg">
+                        <img src="img/about/girl.jpg" alt="Наше производство">
+                    </picture>
                 </div>
             </div><!-- .our-production-wrapper -->
 

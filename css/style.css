@@ -5,6 +5,7 @@
     font-family: 'Bebas Neue Book';
     src: url('../fonts/BebasNeueBook.woff') format('woff');
     font-weight: normal;
+    font-display: swap;
     font-style: normal;
 }
 body {
