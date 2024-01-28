@@ -17,10 +17,10 @@
                         <p>Разнообразный и богатый опыт говорит нам, что перспективное планирование однозначно фиксирует необходимость поставленных обществом задач! Есть над чем задуматься: ключевые особенности структуры проекта могут быть объединены в целые кластеры себе подобных. Интерактивные прототипы, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут описаны максимально подробно. Значимость этих проблем настолько очевидна, что перспективное планирование играет важную роль в формировании системы массового участия.</p>
                     </div>
                 </div>
-                <picture class="we-experts-image">
+                <picture>
                         <source type="image/webp" srcset="img/about/our.webp">
                         <source type="image/jpeg" srcset="img/about/our.png">
-                        <img src="img/about/our.png" alt="Наше производство">
+                        <img src="img/about/our.png" alt="Наше производство" class="we-experts-image">
                     </picture>
             </div>
 
@@ -28,7 +28,9 @@
     </section>
 
     <div class="container">
-    <?php require_once('./template-parts/features-block.php');?>
+    <?php 
+    $feautres_style = 'about-features-text';
+    require_once('./template-parts/features-block.php');?>
     </div>
 
 
@@ -82,10 +84,10 @@
                     </ul>
                 </div>
                 <div class="our-production-image">
-                <picture class="our-production-photo">
+                <picture>
                         <source type="image/webp" srcset="img/about/girl.webp">
                         <source type="image/jpeg" srcset="img/about/girl.jpg">
-                        <img src="img/about/girl.jpg" alt="Наше производство">
+                        <img src="img/about/girl.jpg" alt="Наше производство" class="our-production-photo">
                     </picture>
                 </div>
             </div><!-- .our-production-wrapper -->

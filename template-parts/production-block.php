@@ -11,10 +11,10 @@
                         <h3 class="card-title">Автомобильная химия</h3>
                         <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
                     </div>
-                    <picture class="card-image">
+                    <picture>
                         <source type="image/webp" srcset="img/auto-him.webp">
                         <source type="image/jpeg" srcset="img/auto-him.png">
-                        <img src="img/auto-him.png" alt="Автомобильная химия">
+                        <img src="img/auto-him.png" alt="Автомобильная химия" class="card-image">
                     </picture>
                 </a>
                 <a href="#" class="card">
@@ -22,10 +22,10 @@
                         <h3 class="card-title">Бытовая химия</h3>
                         <p class="card-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
                     </div>
-                    <picture class="card-image">
+                    <picture>
                         <source type="image/webp" srcset="img/him.webp">
                         <source type="image/jpeg" srcset="img/him.png">
-                        <img src="img/him.png" alt="Бытовая химия">
+                        <img src="img/him.png" alt="Бытовая химия" class="card-image">
                     </picture>
                 </a>
                 <a href="#" class="card">
@@ -33,10 +33,10 @@
                         <h3 class="card-title">Дезинфицирующие средства</h3>
                         <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
                     </div>
-                    <picture class="card-image">
+                    <picture>
                         <source type="image/webp" srcset="img/dezinfect.webp">
                         <source type="image/jpeg" srcset="img/dezinfect.png">
-                        <img src="img/dezinfect.png" alt="Дезинфицирующие средства">
+                        <img src="img/dezinfect.png" alt="Дезинфицирующие средства" class="card-image">
                     </picture>
                 </a>
                 <a href="#" class="card">
@@ -44,10 +44,10 @@
                         <h3 class="card-title">Пищевые аэрозоли</h3>
                         <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
                     </div>
-                    <picture class="card-image">
+                    <picture>
                         <source type="image/webp" srcset="img/food.webp">
                         <source type="image/jpeg" srcset="img/food.png">
-                        <img src="img/food.png" alt="Пищевые аэрозоли">
+                        <img src="img/food.png" alt="Пищевые аэрозоли" class="card-image">
                     </picture>
                 </a>
                 <a href="#" class="card">
@@ -55,10 +55,10 @@
                         <h3 class="card-title">Косметическая продукция</h3>
                         <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
                     </div>
-                    <picture class="card-image">
+                    <picture>
                         <source type="image/webp" srcset="img/household.webp">
                         <source type="image/jpeg" srcset="img/household.png">
-                        <img src="img/household.png" alt="Косметическая продукция">
+                        <img src="img/household.png" alt="Косметическая продукция" class="card-image">
                     </picture>
                 </a>
                 <a href="#" class="card">
@@ -66,10 +66,10 @@
                         <h3 class="card-title">Краски аэрозольные</h3>
                         <p class="card-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
                     </div>
-                    <picture class="card-image">
+                    <picture>
                         <source type="image/webp" srcset="img/colors.webp">
                         <source type="image/jpeg" srcset="img/colors.png">
-                        <img src="img/colors.png" alt="Краски аэрозольные">
+                        <img src="img/colors.png" alt="Краски аэрозольные" class="card-image">
                     </picture>
                 </a>
             </div>

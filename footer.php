@@ -1,9 +1,9 @@
 <section class="cta">
         <div class="bg-grey section-cta">
-            <picture class="cta-image">
+            <picture>
                 <source type="image/webp" srcset="img/cta.webp">
                 <source type="image/jpeg" srcset="img/cta.png">
-                <img src="img/cta.png" alt="call to action">
+                <img src="img/cta.png" alt="call to action" class="cta-image">
             </picture>
             <div class="cta-from-wrapper container">
                 <form action="./handler.php" method="POST" class="cta-form">

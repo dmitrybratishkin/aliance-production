@@ -11,24 +11,24 @@
                 <div class="swiper-wrapper">
                   <!-- Slides -->
                   <a href="#" class="swiper-slide blog-card">
-                    <picture class="about-card-image">
+                    <picture>
                         <source type="image/webp" srcset="img/blog/blog-photo.webp">
                         <source type="image/jpeg" srcset="img/blog/blog-photo.jpg">
-                        <img src="img/blog/blog-photo.jpg" alt="blog-photo">
+                        <img src="img/blog/blog-photo.jpg" alt="blog-photo" class="about-card-image">
                     </picture>
                   </a>
                   <a href="#" class="swiper-slide blog-card">
-                    <picture class="about-card-image">
+                    <picture>
                         <source type="image/webp" srcset="img/blog/blog-photo-two.webp">
                         <source type="image/jpeg" srcset="img/blog/blog-photo-two.jpg">
-                        <img src="img/blog/blog-photo-two.jpg" alt="blog-photo">
+                        <img src="img/blog/blog-photo-two.jpg" alt="blog-photo" class="about-card-image">
                     </picture>
                   </a>
                   <a href="#" class="swiper-slide blog-card">
-                  <picture class="about-card-image">
+                  <picture>
                         <source type="image/webp" srcset="img/blog/blog-photo.webp">
                         <source type="image/jpeg" srcset="img/blog/blog-photo.jpg">
-                        <img src="img/blog/blog-photo.jpg" alt="blog-photo">
+                        <img src="img/blog/blog-photo.jpg" alt="blog-photo" class="about-card-image">
                     </picture>
                   </a>
                 </div>

@@ -1,8 +1,8 @@
 <div class="swiper header-features-slider">
     <!-- Обертка -->
-    <ul class="swiper-wrapper header-features <?= $navbar_style; ?>">
+    <ul class="swiper-wrapper header-features <?= $feautres_style; ?>">
         <!-- Слайды -->
-        <li class="swiper-slide header-features-item about-features-text">
+        <li class="swiper-slide header-features-item">
             <svg class="icon" width="36" height="36">
                 <use href="./img/sprite.svg#time"></use>
             </svg>
