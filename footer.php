@@ -81,7 +81,7 @@
             <div class="footer-bottom">
                 <div class="footer-menu-wrapper">
                     <h2 class="footer-menu-title">Контрактное производство</h2>
-                    <ul class="footer-menu-list footer-menu-column-2">
+                    <ul class="footer-menu-list">
                         <li class="footer-menu-item"><a href="#" class="footer-menu-link">Автомобильная химия</a></li>
                         <li class="footer-menu-item"><a href="#" class="footer-menu-link">Бытовая химия</a></li>
                         <li class="footer-menu-item"><a href="#" class="footer-menu-link">Дезинфицирующие средства</a></li>
