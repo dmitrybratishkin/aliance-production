@@ -17,7 +17,7 @@
                         <!-- /.input-group -->
                         <div class="input-group">
                             <input id="user-phone" type="tel" class="input phone-mask" name="userphone" placeholder=" " maxlenght="30" required>
-                            <label class="input-group-label phone-mask" for="user-phone">Номер телефона</label>
+                            <label class="input-group-label" for="user-phone">Номер телефона</label>
                         </div>
                         <!-- /.input-group -->
                     </div>

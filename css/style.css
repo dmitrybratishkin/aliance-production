@@ -688,13 +688,13 @@ body {
     flex-shrink: 0;
 }
 .notify-text {
-    max-width: 380px;
-    margin: 0;
-    font-size: 12px;
+    max-width: 23.75rem;
     font-style: normal;
     font-weight: 400;
+    font-size: 0.75rem;
     line-height: 160%;
-    color: #828A99;
+    color: #828a99;
+    margin: 0;
 }
 .footer-top {
     padding-top: 3.125rem;
@@ -1658,7 +1658,7 @@ ul.breadcrumb li a {
         padding-top: 0px;
     }
     .notify-text {
-        min-width: 100%;
+        max-width: 100%;
     }
     .modal-dialog {
         max-width: 345px;
