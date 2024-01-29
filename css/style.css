@@ -1,4 +1,3 @@
-@import url("normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap");
 @import url("swiper-bundle.min.css");
 * {
@@ -135,7 +134,7 @@ body {
     align-items: center;
 }
 .header-nav-item:not(:last-child) {
-    margin-right: 4%;
+    margin-right: 3%;
 }
 .header-phone {
     flex-shrink: 0;
@@ -737,8 +736,8 @@ body {
     background-color: #ebebf0;
 }
 .footer-bottom {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    display: flex;
+    padding: 3.125rem 0;
 }
 .footer-menu-title {
     margin-top: 0;
@@ -774,9 +773,6 @@ body {
     font-weight: 600;
     line-height: 160%;
     margin-bottom: 30px;
-}
-.footer-bottom {
-    display: flex;
 }
 .footer-menu-wrapper:last-child {
     margin-left: 5rem;
@@ -1316,6 +1312,9 @@ ul.breadcrumb li a {
 @media (max-width: 992px) {
     html {
         font-size: 12px;
+     }
+    .navbar {
+        height: 5.8rem;
      }
     .container {
         max-width: 60rem;

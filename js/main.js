@@ -1,6 +1,4 @@
 const navbar = document.querySelector('.navbar');
-const logoLight = document.querySelector('.logo-light');
-const logo = document.querySelector('.logo');
 const mMenuToggle = document.querySelector('.mobile-menu-toggle');
 const menu = document.querySelector('.mobile-menu');
 const isFront = document.body.classList.contains('front-page');
@@ -32,17 +30,19 @@ const closeMenu = (event) => {
 };
 
 window.addEventListener('scroll', () => {
-    this.scrollY > 1 ? changeNavHeight('4.5rem') : changeNavHeight('5.875rem');
-    if (isFront) {
-        this.scrollY > 1 ? lightModeOn('') : lightModeOff('');
-    }
+
+  this.scrollY > 1 ? navbar.classList.add('navbar-scroll') : navbar.classList.remove('navbar-scroll');
+  if (isFront) {
+      this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  }
+
 });
 mMenuToggle.addEventListener("click", (event) => {
     event.preventDefault();
     menu.classList.contains('is-open') ? closeMenu() : openMenu();
 });
 
-const swiper = new Swiper('.swiper-slider', {
+const swiper = new Swiper('.header-features-slider', {
     speed: 400,
     slidesPerView: 1,
     navigation: {

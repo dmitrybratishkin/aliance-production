@@ -23,8 +23,11 @@
     require_once('./template-parts/production-block.php');
     $block_title= "собственные торговый марки"; 
     require_once('./template-parts/trademarks-block.php');
-    require_once('./template-parts/clients-block.php');
     require_once('./template-parts/founder-block.php');
+    require_once('./template-parts/clients-block.php');
+    
     
     require_once('blog.php');
     require_once('footer.php');?>
+
+</body>
